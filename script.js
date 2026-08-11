@@ -70,44 +70,17 @@ function initFooterDate() {
   });
 }
 
-/**
- * Visitor counter.
- *
- * TODO (Azure phase): replace the placeholder logic below with a real call
- * to an Azure Function that reads/increments a count in Azure Table Storage.
- * Suggested contract:
- *
- *   GET https://<function-app>.azurewebsites.net/api/visitorcount
- *   -> { "count": 1234 }
- *
- * Example of what the real version will look like:
- *
- *   async function fetchVisitorCount() {
- *     const res = await fetch('https://<function-app>.azurewebsites.net/api/visitorcount');
- *     const data = await res.json();
- *     return data.count;
- *   }
- *
- * Until that endpoint exists, we show a static placeholder so the layout
- * and status-bar styling can be built and tested now.
- */
 function initVisitorCounter() {
   const countEl = document.getElementById('visitorCount');
   if (!countEl) return;
 
-  // Placeholder — swap for the fetchVisitorCount() call above once the
-  // Azure Function + Table Storage backend exists.
   const placeholderCount = '—';
   countEl.textContent = placeholderCount;
 }
 
-/**
- * Wires up every GitHub link on the page (sidebar, icon row, contact section).
- * Update the URL once your GitHub profile is finalised.
- */
 function initGithubLink() {
-  const GITHUB_URL = 'https://github.com/'; // TODO: replace with your GitHub profile URL
-  const LINKEDIN_URL = 'https://www.linkedin.com/'; // TODO: replace with your LinkedIn profile URL
+  const GITHUB_URL = 'https://github.com/DanielCalv'; 
+  const LINKEDIN_URL = 'https://www.linkedin.com/in/daniel-calvert-78318425b/'; 
 
   ['githubLink', 'githubLinkIcon', 'githubLinkBottom'].forEach((id) => {
     const link = document.getElementById(id);
