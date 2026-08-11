@@ -1,4 +1,3 @@
-
 ## Overview
 
 This project is a personal portfolio website built to demonstrate practical Microsoft Azure skills. Rather than creating a static website, the project uses several Azure services to provide dynamic functionality through a serverless architecture.
