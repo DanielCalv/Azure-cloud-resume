@@ -130,7 +130,7 @@ async function initProjectStatuses() {
 
   try {
     const response = await fetch(
-      'http://localhost:7072/api/GetProjectStatuses'
+      'https://daniel-calvert-functions-dzbpayd9fucydtep.francecentral-01.azurewebsites.net/api/GetProjectStatuses'
     );
 
     const statuses = await response.json();
