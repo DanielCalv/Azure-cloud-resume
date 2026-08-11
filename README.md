@@ -6,7 +6,7 @@ This project is a personal portfolio website built to demonstrate practical Micr
 
 The website is hosted using Azure Storage Static Website Hosting and retrieves project status information from Azure Table Storage through an Azure Function. 
 
-Live site: http://127.0.0.1:5500/Azure%20Cloud%20Project/index.html
+Live site: https://danielcalvertresume.z28.web.core.windows.net/
 
 ---
 ## Requirements 
