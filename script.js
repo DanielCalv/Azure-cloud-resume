@@ -104,6 +104,7 @@ async function initProjectStatuses() {
   try {
     const response = await fetch(
       'https://daniel-calvert-functions-dzbpayd9fucydtep.francecentral-01.azurewebsites.net/api/GetProjectStatuses'
+      { cache: 'no-store' }
     );
 
     const statuses = await response.json();
